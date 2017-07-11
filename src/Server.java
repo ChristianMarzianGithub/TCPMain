@@ -17,7 +17,6 @@ public class Server implements Runnable{
 		this.port = APort;		
 	}
 	
-	@Override
 	public void run() {
 		try {
 			 srvr = new ServerSocket(1234);

@@ -1,5 +1,7 @@
 package newtcpGUIBeginner;
 
+import javax.swing.DefaultListModel;
+
 public class TestKlassse {
 
 	public TestKlassse() {
@@ -13,9 +15,22 @@ public class TestKlassse {
 		Thread t1 = new Thread(svr);
 		Thread t2 = new Thread(clnt);
 		
+	
+		DefaultListModel dlm = new DefaultListModel();
+		dlm.addElement("asdf");
+		dlm.addElement("qwer");
+		dlm.addElement("opui");
 		
-		t1.start();
-		t2.start();
+		
+		
+		KontaktListe x = new KontaktListe(dlm);
+		x.setVisible(true);
+		
+		//t1.start();
+		//t2.start();
+		
+		
+		
 	}
 
 }
